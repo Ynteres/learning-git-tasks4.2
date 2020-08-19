@@ -7,9 +7,9 @@ def sum_ab():
     a=0
     b=0
     c=0
-    print("podaj liczbę A :")
+    print("Podaj liczbę A :")
     a = int(input())
-    print("podaj liczbe B :")
+    print("Podaj liczbe B :")
     b = int(input())
     c = a+b
     print("suma liczb A=%d i B=%d to : %d" %(a,b,c))

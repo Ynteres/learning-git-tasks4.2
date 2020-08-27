@@ -6,8 +6,8 @@ The join() method is a string method and returns a string in which the elements 
 '''
 
 def palindrome(txt): 
-    rtxt = ''.join(reversed(txt))
-    if txt == rtxt: 
+ ##   rtxt = ''.join(reversed(txt))
+    if txt == txt[::-1]: 
         return True
     return False
   

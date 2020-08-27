@@ -12,3 +12,17 @@ Następnie wykonujemy obliczenie i drukujemy rezultat z print.
 Do pobierania wartości użyj input. Nie ma potrzeby sprawdzania, czy podane argumenty są liczbami, 
 przewidujemy poprawne uzupełnienie.
 '''
+def menu():
+    print ("Podaj działanie, posługując się odpowiednią liczbą:\n"
+    "1 - Dodawanie\n"
+    "2 - Odejmownie\n"
+    "3 - Mnożenie\n"
+    "4 - Dzielenie\n")
+
+def enternumber(prompt='podaj liczbę: '):
+    while True:
+        try:
+            out=float(input())
+        else:
+            return out
+

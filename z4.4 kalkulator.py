@@ -60,3 +60,4 @@ def main():
         print("Nie dokonałeś prawidłowego wyboru") 
 
 if __name__ == "__main__":
+    main()

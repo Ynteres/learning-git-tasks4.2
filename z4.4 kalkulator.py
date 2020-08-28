@@ -17,7 +17,8 @@ from calculatorfunctions import *
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', filename="z4.4callog.log")
 
-# Cztery funkcje -> add, subtract, multipy i devide  
+# Cztery funkcje -> add, subtract, multipy i devide 
+# te 4 funkcje zostały umieszczone w pliku calculatorfunctions.py i zaimportowane do pliku głownego 
 '''
 def add(a, b): 
     return a + b 

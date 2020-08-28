@@ -13,7 +13,7 @@ Do pobierania wartości użyj input. Nie ma potrzeby sprawdzania, czy podane arg
 przewidujemy poprawne uzupełnienie.
 '''
 import logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', filename="z4.4logfile.log")
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', filename="z4.4callog.log")
 
 # Cztery funkcje -> add, subtract, multipy i devide  
 
@@ -46,7 +46,7 @@ if option == 1:
     print("Dodaję ",x, "+", y, "=", add(x, y)) 
   
 elif option == 2: 
-    print("Odejmuję ",x, "-", y, "=", subtract(x, y)) 
+    print("Odejmuję ",x, "-", y, "=", "%.2f" % (subtract(x, y))) 
   
 elif option == 3: 
     print("Mnożę ",x, "*", y, "=", multiply(x, y)) 

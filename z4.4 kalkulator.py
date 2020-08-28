@@ -13,7 +13,7 @@ Do pobierania wartości użyj input. Nie ma potrzeby sprawdzania, czy podane arg
 przewidujemy poprawne uzupełnienie.
 '''
 import logging
-import calculatorfunctions
+from calculatorfunctions import *
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', filename="z4.4callog.log")
 

@@ -16,7 +16,7 @@ import sys
 import logging
 from calculatorfunctions import *
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', filename="z4.4callog.log")
+logging.basicConfig(level=logging.DEBUG, filename="z4.4callog.log")
 
 # Cztery funkcje -> add, subtract, multipy i devide 
 # te 4 funkcje zostały umieszczone w pliku calculatorfunctions.py i zaimportowane do pliku głownego 
@@ -33,17 +33,17 @@ def multiply(a, b):
 def divide(a, b): 
     return a / b 
 '''
-def print_choice(option):
+def print_choice(option,x,y):
     if option == 1:
-        logging.info("Dodaje ")
+        logging.debug("Dodaje - opcja %d , suma %s + %s" %(option, str(x),str(y)))
     elif option == 2:
-        logging.info("Odejmuję ")
+        logging.debug("Odejmuję ")
     elif option == 3:
-        logging.info("Mnożę ")
+        logging.debug("Mnożę ")
     elif option == 4:
-        logging.info("Dzielę ")
+        logging.debug("Dzielę ")
     else:
-        logging.info("Nieprawidłowy wybór")
+        logging.debug("Nieprawidłowy wybór")
     
 def main():
     print("Ktora operacje wybierasz -\n"
@@ -53,14 +53,17 @@ def main():
     "4. Dzielenie\n") 
   
 # odczyt wyboru dokonanego przez operatora  
-#    option = int(input("Wybierz operacje 1, 2, 3 lub 4 :")) 
+    option = int(input("Wybierz operacje 1, 2, 3 lub 4 :")) 
 # odczyt cyfr podanych przez operatora  
-    option = int(sys.argv[1])
+    
+    
     x = float(input("Podaj pierwszą liczbę: ")) 
-    y = float(input("Podaj drugą liczbę: ")) 
+    y = float(input("Podaj drugą liczbę: "))
+    print_choice(option,x,y) 
+    print_choice(1,1,1)
   
-    if option == 1: 
-        print_choice(option)
+    if option == 1:
+        logging.debug("Dodaje - opcja %d , suma %s + %s" %(option, str(x),str(y)))
         print("Dodaję ",x, "+", y, "=", add(x, y)) 
     
     elif option == 2: 

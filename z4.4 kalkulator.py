@@ -18,7 +18,7 @@ from calculatorfunctions import *
 # Cztery funkcje -> add, subtract, multipy i devide 
 # te 4 funkcje zostały umieszczone w pliku calculatorfunctions.py i zaimportowane do pliku głownego 
  
-'''
+
 
 def print_choice(option,x=0,y=0):
     if option == 1:
@@ -30,7 +30,7 @@ def print_choice(option,x=0,y=0):
     elif option == 4:
         a=logging.info("Dodaje - opcja %d , iloraz %s / %s" %(option, str(x),str(y)))
     return a
-'''
+
 
 def main():
     logging.basicConfig(level=logging.INFO)    #, filename="z4.4callog.log")
